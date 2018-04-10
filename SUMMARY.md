@@ -6,3 +6,4 @@
   * [MarkDown文档讲解](commonDoc/markdown.md)
 * 服务端相关文档
   * [服务器运行状态每日例行检查规范](ServerDoc/gameServer.md)
+  * [JS异步处理方法总结](ServerDoc/jsAsync.md)
