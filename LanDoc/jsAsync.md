@@ -57,6 +57,7 @@ Javascript 语言的执行环境是"单线程"（single thread）。"异步模�
 ``` javascript
   f1.on('done', f2);
 ```
+
 f1.trigger('done')表示，执行完成后，立即触发done事件，从而开始执行f2。
 
 ``` javascript
@@ -77,7 +78,7 @@ f1.trigger('done')表示，执行完成后，立即触发done事件，从而开�
 
 比较容易理解，可以绑定多个事件，每个事件可以指定多个回调函数，而且可以"去耦合"（Decoupling），有利于实现模块化。
 
-### 缺点
+### -缺点
 
 整个程序都要变成事件驱动型，运行流程会变得很不清晰。
 
@@ -117,11 +118,11 @@ f1.trigger('done')表示，执行完成后，立即触发done事件，从而开�
       })
 ```
 
-### 优点
+### -优点
 
 回调函数变成了链式写法，程序的流程可以看得很清楚，而且有一整套的配套方法，可以实现许多强大的功能。
 
-### 缺点
+### --缺点
 
 编写和理解，都相对比较难；如果场景再复杂一点，比如后边的每一个请求依赖前面所有请求的结果，而不仅仅依赖上一次请求的结果，那会更复杂。
 
@@ -189,14 +190,14 @@ async/await 是 Generator 函数处理异步的语法糖。
 
 ``` javascript
 const fn = async () => {
-	const loginNames = await getLoginNames()
-	const result = (await Promise.all(
-		loginNames.map(async name => {
-			const user = await db.collection("users").findOne({loginName: name})
-			return user.score > 50 ? user : null
-		})
-	)).filter(m => m !== null)
-	return result
+    const loginNames = await getLoginNames()
+    const result = (await Promise.all(
+        loginNames.map(async name => {
+            const user = await db.collection("users").findOne({loginName: name})
+            return user.score > 50 ? user : null
+        })
+    )).filter(m => m !== null)
+    return result
 }
 ```
 

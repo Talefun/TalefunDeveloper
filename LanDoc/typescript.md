@@ -1,26 +1,35 @@
-# WordGameH5
+# TypeScript简要说明
+
 ## TypeScript 的使用
- ts 网上都有完整的教程，我这里就不多说了。只说一些，我的项目里 用的的一些实用的东西。ts网上的文档：https://tslang.cn/docs/handbook/basic-types.html 。
+
+ ts 网上都有完整的教程，我这里就不多说了。只说一些，我的项目里 用的的一些实用的东西。ts网上的文档：[点击前往](https://tslang.cn/docs/handbook/basic-types.html)
+
 ### 基础类型
-```
+
+``` text
 - boolean：布尔类型
 - number：TypeScript所有的数值类型采用浮点型计数
 - string：字符串类型
 - Array：数组
 - Enum：枚举
 - any：任何类型，可以用来跳过TypeScript的编译时类型的检查
-- void：表明函数无返回值 
+- void：表明函数无返回值
 - null 空值
 - undefined 未定义
 ```
+
 ### 修饰符
+
 ``` typescript
 public  a = 1; //公共的
 private b = 2; //私有的
 protected c = 3; //可继承的
 ```
+
 默认不写是公共的
+
 ### 变量声明
+
  ``` typescript
     var a = 1;//js 的写法 ts 也可以，但是不推荐，推荐用let
     let b = 2;  // 跟var 一样的用法，但是 作用域不一样 let是 块作用域
@@ -32,7 +41,9 @@ protected c = 3; //可继承的
        public static readonly g = 7;//类的静态只读变量，只能一开始就赋值。
     }
  ```
+
 ### 类型别名
+
 ``` typescript
 type UIData = {
     package?: string;
@@ -49,21 +60,23 @@ type UIData = {
     closeSound?: string;
 }
 function fun1(uiData:UIData):void{
-    
 }
 function fun2(uiData:Object):void{
-
 }
 let stageVo:{[value:string]:StageVO};
 function fun3(fun:(boolean)=>void):void{
     fun(true);
 }
 ```
-  ##### 类型别名跟接口很像 但是不能继承 它也不会生成js代码 它只起一个规范作用
+
+#### 类型别名跟接口很像 但是不能继承 它也不会生成js代码 它只起一个规范作用
+
  两个方法 fun1 和fun2 都是传入一个 uiData的Object类型的数据，但是如果没有 UIData 类型别名的约束，就很有可能传错参数。
  里边的  加一个 ?号 表示可有可无的 参数。
  一些简单的类型 不用再写一个类型别名，可以直接 :号后边写出来
+
 ### 接口
+
 ``` typescript
  interface BaseScene {
     /**场景id */
@@ -78,27 +91,28 @@ function fun3(fun:(boolean)=>void):void{
     onExit(): void;
 }
 class LoadScene implements BaseScene {
-	constructor(public sceneID: number, public preload?: string) { }
-	/**初始化场景 注册在这个场景里需要打开的界面*/
-	initScene(): void {
-		App.UIManager.registerID(PanelID.LOGIN_UI, LoadCtrl);
-	}
-	/**进入场景调用 */
-	onEnter(): void {
-		App.SceneManager.runScene(SceneID.Main_Scene, PanelID.LOGIN_UI);
-	}
-	/**退出场景 */
-	onExit(): void {
+    constructor(public sceneID: number, public preload?: string) { }
+    /**初始化场景 注册在这个场景里需要打开的界面*/
+    initScene(): void {
+        App.UIManager.registerID(PanelID.LOGIN_UI, LoadCtrl);
+    }
+    /**进入场景调用 */
+    onEnter(): void {
+        App.SceneManager.runScene(SceneID.Main_Scene, PanelID.LOGIN_UI);
+    }
+    /**退出场景 */
+    onExit(): void {
 
-	}
-	/**切换场景的时候是否销毁，清空资源 */
-	get isDestroy(): boolean {
-		return false;
-	}
+    }
+    /**切换场景的时候是否销毁，清空资源 */
+    get isDestroy(): boolean {
+        return false;
+    }
 }
-``` 
+```
 
 ### 抽象类 抽象方法 泛型类 泛型约束
+
 ``` typescript
   abstract class BaseCtrl<T extends fairygui.GComponent> {
     /**控制的界面 */
@@ -201,8 +215,10 @@ class HelpFriendsOkCtrl extends BaseCtrl<GameView.UI_HelpFriendsOkView>{
         };
     }
 }
-``` 
+```
+
 ### 索引类型（Index types）
+
 ``` TypeScript
 class Class1 {
     public a:number;
@@ -215,8 +231,11 @@ class Class1 {
     }
 }
 ```
+
 外部调用的时候只能用 Class1的属性名字做参数。否则 编译报错
+
 ### 联合类型（Union Types）
+
 ``` typescript
 function fun1(a:number|string):void{
     if(typeeof a ==="number"){
@@ -229,12 +248,14 @@ function fun1(a:number|string):void{
     // 如果不是基础类型， 用 instanceof 判断比如说 if(a instanceof Class1);
 }
 ```
+
 ### 方法参数
+
 ``` typescript
  function fun(id:string,name?:string,sex:string="男",...hobbys:string[]):void
 ```
+
 id是必须参数。
 name是可选参数 后面加 ?号。
 sex也是可选参数。有默认值。
 hobbys是剩余参数 如果你并不知道有几个参数传进来，可以用这个表示。
-
