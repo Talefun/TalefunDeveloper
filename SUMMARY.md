@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [简介](README.md)
 * 通用文档
   * [Git讲解](commonDoc/Git.md)
   * [MarkDown文档讲解](commonDoc/markdown.md)
