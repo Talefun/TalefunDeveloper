@@ -1,6 +1,12 @@
 # Markdown文档说明
 
-## 编辑器支持
+## Markdown书写文档规范
+
+Markdown 语法说明:[点击前往](http://wowubuntu.com/markdown/)
+Markdown 语法介绍:[点击前往](https://coding.net/help/doc/project/markdown.html)
+掌握这几种 Markdown 语法你就够了:[点击前往](https://laravel-china.org/topics/621/you-will-be-able-to-master-these-markdown-grammars)
+
+## 常用编辑器Markdown支持
 
 ### Sublime Text安装过程
 
@@ -28,10 +34,10 @@
 
   简单设置：Preferences → Package Settings → MarkdownLivePreview → Setting，打开后将左边default的设置代码复制到右边User栏，找到"markdown_live_preview_on_open": false,把false改为true，保存。
 
-### VSCode 自带支持，不需要额外安装。
+### VSCode 安装过程。
 
-![image1](./images/md效果1.png)
+VSCode默认支持Markdown文档预览，点击窗口右上角的预览按钮可以打开预览页面。
+![image](./images/md效果4.jpg)
 
-## markdown书写文档规范
-
-markdown支持的各种语法说明请参考这里：[点击前往](http://blog.leanote.com/post/freewalk/Markdown-%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C)
+如果对预览效果不满意，可以选择安装插件MPE:[前往安装教程](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/vscode-installation)
+![image](./images/md效果1.png)
