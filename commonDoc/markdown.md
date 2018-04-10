@@ -41,3 +41,9 @@ VSCode默认支持Markdown文档预览，点击窗口右上角的预览按钮可
 
 如果对预览效果不满意，可以选择安装插件MPE:[前往安装教程](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/vscode-installation)
 ![image](./images/md效果1.png)
+
+## Markdown语法检测器
+
+VSCode下推荐安装Markdown语法检测插件markdownlint
+
+![image](./images/md效果5.jpg)
