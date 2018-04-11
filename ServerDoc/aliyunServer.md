@@ -2,7 +2,7 @@
 
 ## 基础架构设计
 
-  ![image](https://on-img.com/chart_image/5acc6413e4b09bf96ae9e45c.png)
+  ![image](https://on-img.com/chart_image/5acd8356e4b0518eaca3f91b.png)
 
 ## 运维工具
 
