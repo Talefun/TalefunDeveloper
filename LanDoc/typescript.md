@@ -7,15 +7,15 @@
 ### 基础类型
 
 ``` text
-- boolean：布尔类型
-- number：TypeScript所有的数值类型采用浮点型计数
-- string：字符串类型
-- Array：数组
-- Enum：枚举
-- any：任何类型，可以用来跳过TypeScript的编译时类型的检查
-- void：表明函数无返回值
-- null 空值
-- undefined 未定义
+boolean：布尔类型
+number：TypeScript所有的数值类型采用浮点型计数
+string：字符串类型
+Array：数组
+Enum：枚举
+any：任何类型，可以用来跳过TypeScript的编译时类型的检查
+void：表明函数无返回值
+null 空值
+undefined 未定义
 ```
 
 ### 修饰符
