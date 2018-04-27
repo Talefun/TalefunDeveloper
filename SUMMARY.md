@@ -5,6 +5,7 @@
   * [Git讲解](commonDoc/Git.md)
   * [MarkDown文档讲解](commonDoc/markdown.md)
   * [内购流程梳理](commonDoc/iapFlow.md)
+  * [RTM接入流程梳理](commonDoc/rtm.md)
 * 服务端相关文档
   * [服务器运行状态每日例行检查规范](ServerDoc/gameServer.md)
   * [阿里云部署架构设计](ServerDoc/aliyunServer.md)
