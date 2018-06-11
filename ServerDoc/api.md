@@ -30,6 +30,6 @@
 
 ## NEI平台使用文档
 
-NEI具体的使用，可以参考示例项目[user-center](https://nei.netease.com/project?pid=30973)。
+NEI具体的使用，可以参考示例项目[user-center](https://nei.netease.com/project?pid=30886)。
 
 也可以参考官方[文档](https://github.com/NEYouFan/nei-toolkit/blob/master/doc/NEI%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%BB%8B%E7%BB%8D.md)和[视频](https://nei.netease.com/tutorial)。
