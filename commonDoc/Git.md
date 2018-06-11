@@ -6,6 +6,12 @@ Git Flow是基于git的一种版本管理方法，它定义了各种分支的作
 
 ![git flow](./images/gitflow.png)
 
+master - 发布主线
+develop - 开发主线
+feature - 功能开发分支，从develop上最新的节点创建，完成后被develop合并。
+release - 发布分支，从develop上最新的节点创建，完成后被master和develop分别合并。
+hotfix - bug修复分支，从master上最新的节点创建，完成后被master和develop分别合并。
+
 ### 基于sourcetree的Git Flow操作流程
 
 [source tree 下的 Git Flow](http://www.cnblogs.com/cocoajin/p/4171312.html)

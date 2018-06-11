@@ -2,8 +2,10 @@
 
 * [简介](README.md)
 * 通用文档
-  * [Git讲解](commonDoc/Git.md)
+  * [GitFlow讲解](commonDoc/Git.md)
+  * [代码分支管理指南](commonDoc/GitRule.md)
   * [MarkDown文档讲解](commonDoc/markdown.md)
+  * [程序组术语约定文档](commonDoc/term.md)
   * [内购流程梳理](commonDoc/iapFlow.md)
   * [RTM接入流程梳理](commonDoc/rtm.md)
 * 服务端相关文档
