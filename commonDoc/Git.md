@@ -28,18 +28,18 @@ hotfix - bug修复分支，从master上最新的节点创建，完成后被maste
 
   首先明确这次提交是否已经被提交了到远端（origin）。
 
-  如果还没有pull到origin,可以使用reset操作。
+  如果还没有push到origin,可以使用reset操作。
 
-  如果已经pull到了origin,建议使用revert操作,
+  如果已经push到了origin,建议使用revert操作,
   创建一个针对该commit的反向修改commit。
 
 #### 3.如何回滚一次合并(merge)
 
   首先明确这次提交是否已经被提交了到远端（origin）。
 
-  如果还没有pull到origin,可以使用reset操作。
+  如果还没有push到origin,可以使用reset操作。
 
-  如果已经pull到了origin,
+  如果已经push到了origin,
   只能使用命令行操作git revert -m,
   提交一个反向文件修改的commit。
   但是这样操作依然会存在一个问题。
