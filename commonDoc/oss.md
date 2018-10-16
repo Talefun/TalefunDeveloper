@@ -22,11 +22,13 @@
 
 `../${release/debug}/gameLevel/${apiVersion}/..`
 
-    gameLevel: 表示关卡配置相关资源的总入口。
+``` text
+gameLevel: 表示关卡配置相关资源的总入口。
 
-    release/debug: 用于区分运行环境是 debug 还是 release。
+release/debug: 用于区分运行环境是 debug 还是 release。
 
-    apiVersion: 类似 restAPI 的接口定义。在关卡配置表结构有比较大的变动，只有新版的客户端才能支持使用时，通过这个 version 来区分新旧客户端请求的配置信息。
+apiVersion: 类似 restAPI 的接口定义。在关卡配置表结构有比较大的变动，只有新版的客户端才能支持使用时，通过这个 version 来区分新旧客户端请求的配置信息。
+```
 
 ## OSS 资源上传脚本工具
 
@@ -41,17 +43,16 @@
 ```json
 
 {
-  version: ${YYYYMMDD} //使用number类型
-  files: [
+  "version": "${YYYYMMDD}" //使用number类型
+  "files": [
     {
-      file: 'path',
-      md5: 'string'
+      "file": "path",
+      "md5": "string"
     },
     {
-      file: 'path',
-      md5: 'string'
-    },
-    ...
+      "file": "path",
+      "md5": "string"
+    }
   ]
 }
 ```
