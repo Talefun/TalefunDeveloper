@@ -20,7 +20,7 @@
 
 ## OSS 资源文件夹层级管理要求
 
-`../gameLevel/${release/debug}/${apiVersion}/..`
+`../${release/debug}/gameLevel/${apiVersion}/..`
 
     gameLevel: 表示关卡配置相关资源的总入口。
 
@@ -70,7 +70,7 @@
 
 将一级地址替换为对应的 CDN 地址，就是走 CDN 加速的下载地址。大概的格式如下：
 
-`https://${CDN地址}/gameLevel/${release/debug}/${apiVersion}/${OSS下的完整路径}`
+`https://${CDN地址}/${release/debug}/gameLevel/${apiVersion}/${OSS下的完整路径}`
 
 <font color=red> 注意：每个项目的 CDN 地址向管理员确认。</font>。
 
@@ -79,7 +79,7 @@
 ### 客户端下载资源的管理
 
 1.下载的资源按对应的路径层级存放在本地 download 文件夹下。
-`${allPath}/download/gameLevel/${release/debug}/${apiVersion}/${OSS下的完整路径}`。
+`${allPath}/download/${release/debug}/gameLevel/${apiVersion}/${OSS下的完整路径}`。
 
 2.下载的资源只要是同一个 apiVersion 文件夹下的，新的文件可以覆盖旧的文件。
 
