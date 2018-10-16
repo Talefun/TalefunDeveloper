@@ -43,7 +43,7 @@ apiVersion: 类似 restAPI 的接口定义。在关卡配置表结构有比较�
 ```json
 
 {
-  "version": "${YYYYMMDD}" //使用number类型
+  "version": "${YYYYMMDD}", //使用number类型
   "files": [
     {
       "file": "path",
