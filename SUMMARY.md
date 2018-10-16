@@ -8,6 +8,7 @@
   * [程序组术语约定文档](commonDoc/term.md)
   * [内购流程梳理](commonDoc/iapFlow.md)
   * [RTM接入流程梳理](commonDoc/rtm.md)
+  * [关卡内置更新规范](commonDoc/oss.md)
 * 服务端相关文档
   * [API管理方式说明文档](ServerDoc/api.md)
   * [服务器运行状态每日例行检查规范](ServerDoc/gameServer.md)
